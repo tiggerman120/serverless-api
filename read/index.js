@@ -1,6 +1,6 @@
 'use strict';
 
-const xmodel = require('./x.schema');
+const xmodel = require('./mug.schema');
 
 exports.handler = async (event) => {
   const id = event.pathParameters.id;
@@ -21,7 +21,7 @@ exports.handler = async (event) => {
   } catch (e) {
     return {
       statusCode: 500,
-      response: JSON.stringify(e)
-    }
+      response: JSON.stringify(e),
+    };
   }
-}
+};

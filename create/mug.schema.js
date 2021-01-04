@@ -9,7 +9,7 @@ const mugsSchema = new dynamoose.Schema({
     "type": Array,
     "schema": [String]
   },
-  'dropable': { type:Boolean, default: true}
+  'dropable': { type: Boolean, default: true }
 });
 
 module.exports = dynamoose.model('mugs', mugsSchema);
